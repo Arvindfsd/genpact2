@@ -19,13 +19,13 @@ import com.example.entity.Product;
 import com.example.service.ProductService;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/products2")
 public class ProductController {
 
 	@Autowired
 	private ProductService productService;
 
-	@PostMapping("/save")
+	@PostMapping("/save2")
 	public ResponseEntity<Product> saveProduct(@RequestBody Product product) {
 
 		Product savedProduct = productService.saveProduct(product);
